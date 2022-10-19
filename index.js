@@ -485,75 +485,87 @@ city_country('"Istanbul"', '"Turkey"');
 
 //ASSIGNMENT 40
 console.log("\n \t Assignment 40");
-function make_album(artistName, albumTitle){
-  let Album = {
-    AlbumName: artistName,
-    AlbumTitle: albumTitle,
-  };
-  console.log(Album.AlbumName);
-  console.log(Album.AlbumTitle);
+function make_album(album, artist) {
+  console.log(`Album ${album} by ${artist}`);
+}
+make_album("Fine line" , "Harry styles");
+make_album("Born pink" , "Blackpink");
+make_album("Happier than ever" , "Billie Eilish");
+
+
+
+//ASSIGNMENT 41
+console.log("\n \t Assignment 41");
+var magicians = ["Penn", "Jerry", "Dynamo", "Criss"]
+function show_magician(){
+  for (var i = 0; i<magicians.length; i++){
+    console.log(magicians[i])
+  }
 };
-make_album("Arian Grande", "Beauty Bee");
-
-
-// //ASSIGNMENT 41
-// console.log("\n \t Assignment 41");
+show_magician()
 
 
 
-// //ASSIGNMENT 42
-// console.log("\n \t Assignment 42");
+//ASSIGNMENT 42
+console.log("\n \t Assignment 42");
+var magicians = ["Penn", "Jerry", "Dynamo", "Criss"]
+function make_great(m){
+  m.forEach((element, index) =>{
+    m[index] = "The Great " + element;
+  })
+  console.log(m);
+}
+make_great(magicians)
 
 
 
-// //ASSIGNMENT 43
-// console.log("\n \t Assignment 43");
+//ASSIGNMENT 43
+console.log("\n \t Assignment 43");
+var magicians = ["Penn", "Jerry", "Dynamo", "Criss"];
+function show_magician(){
+  for (var i = 0; i<magicians.length; i++){
+    console.log(magicians[i])
+  }
+};
+show_magician()
+function make_great(m){
+  m.forEach((element, index) =>{
+    m[index] = "The Great " + element;
+  })
+  console.log(m);
+}
+make_great(magicians)
+  
+
+
+//ASSIGNMENT 44
+console.log("\n \t Assignment 44");
+function sandwich(...ingredients){
+  for (let ingredient of ingredients){
+    console.log("-",ingredient)
+  }
+}
+console.log("Hafsa wants :")
+sandwich("mayonise", " boil chicken", "black pepper")
+console.log("Maria wants :")
+sandwich("cheese", "tomato sauce", "chunks")
+console.log("Daniyal wants :")
+sandwich("kabab", "fried egg", "ketchup")
+console.log("in their sandwich.")
 
 
 
-// //ASSIGNMENT 44
-// console.log("\n \t Assignment 44");
-// var sandwhich = ['roast beef', 'cheddar cheese', 'lettuce', 'honey dijon']
-// console.log("Which type of sandwich you want ?")
-// for (var i = 0; i < sandwhich.length; i++) {
-//     make_sandwich(sandwhich[i]);
-// }
-// function make_sandwich(item) {
-//     console.log("  ...adding " + item + " to your sandwich.")
-
-// }
-// console.log("Your sandwich is ready!")
-// var sandwhich2 = ['turkey', 'apple slices', 'honey mustard']
-// console.log("Steps to make a sandwhich.....")
-// for (var i = 0; i < sandwhich2.length; i++) {
-//     make_sandwich(sandwhich2[i]);
-// }
-// function make_sandwich(item) {
-// console.log("  ...adding " + item + " to your sandwich.")
-
-// console.log("Your sandwich is ready!")
-// var sandwhich = ['peanut butter', 'strawberry jam']
-// console.log("Steps to make a sandwhich.....")
-// for (var i = 0; i < sandwhich.length; i++) {
-//     make_sandwich(sandwhich[i]);
-// }
-// function make_sandwich(item) {
-//     console.log("  ...adding " + item + " to your sandwich.")
-
-// }
-// console.log("Your sandwich is ready!");
-
-
-
-
-// //ASSIGNMENT 45
-// console.log("\n \t Assignment 45");
-// function Cars(name, model, colour) {
-//   let car = {
-//     Name: name,
-//     Model: model,
-//     Colour: colour,
-//   };
-//   console.log(car.Name, car.Model, car.Colour);
-// }
-// Cars("Ferrari", "2022", "Red");}
+//ASSIGNMENT 45
+console.log("\n \t Assignment 45");
+function car(manufacture, model, color, price){
+  this.manufacturerName = manufacture;
+  this.modelName = model;
+  this.color = color;
+  this.price = price;
+}
+let myCar = new car("BMW", "iX3", "White", "PKR 240.4 Lacs")
+console.log(myCar)
+let myCar1 = new car("GUGU", "250", "Grey", "PKR 78.0-80.0 Lacs")
+console.log(myCar1)
+let myCar2 = new car("Peugeot", "2022", "Blue", "75.0 Lacs")
+console.log(myCar2)
